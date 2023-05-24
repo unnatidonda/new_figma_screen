@@ -1,4 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:new_figma_screen/comman_widget/environment.dart';
+import 'package:new_figma_screen/comman_widget/environments.dart';
+import 'package:new_figma_screen/comman_widget/facilities.dart';
+import 'package:new_figma_screen/comman_widget/list_type.dart';
+import 'package:new_figma_screen/comman_widget/listing_photos.dart';
+import 'package:new_figma_screen/comman_widget/property.dart';
+import 'package:new_figma_screen/comman_widget/property_category.dart';
+import 'package:new_figma_screen/comman_widget/property_features.dart';
+import 'package:new_figma_screen/comman_widget/total_rooms.dart';
 
 class EightFigmaScreen extends StatefulWidget {
   const EightFigmaScreen({Key? key}) : super(key: key);
@@ -197,44 +206,12 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
               ),
             ),
             Row(
-              children: [
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 70,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFF234F68),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 20, top: 10),
-                    child: Text(
-                      "Rent",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+              children: const [
+                ListType(
+                  name: "Rent",
                 ),
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 70,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFF234F68),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 25, top: 10),
-                    child: Text(
-                      "Sell",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                ListType(
+                  name: "Sell",
                 ),
               ],
             ),
@@ -254,110 +231,27 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
               ),
             ),
             Row(
-              children: [
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 85,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFF234F68),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 20, top: 10),
-                    child: Text(
-                      "House",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+              children: const [
+                PropertyCategory(
+                  name: "House",
                 ),
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFF5F4F8),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 25, top: 10),
-                    child: Text(
-                      "Apartment",
-                      style: TextStyle(
-                        color: Color(0xFF234F68),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                PropertyCategory(
+                  name: "Apartment",
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 7, top: 15),
-              child: Row(
-                children: [
-                  const SizedBox(width: 20),
-                  Container(
-                    height: 47,
-                    width: 75,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color(0xFFF5F4F8),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.only(left: 20, top: 10),
-                      child: Text(
-                        "Hotel",
-                        style: TextStyle(
-                          color: Color(0xFF234F68),
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 20),
-                  Container(
-                    height: 47,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color(0xFFF5F4F8),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.only(left: 20, top: 10),
-                      child: Text(
-                        "Villa",
-                        style: TextStyle(
-                          color: Color(0xFF234F68),
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 15),
-                  Container(
-                    height: 47,
-                    width: 84,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color(0xFFF5F4F8),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.only(left: 10, top: 10),
-                      child: Text(
-                        "Cottage",
-                        style: TextStyle(
-                          color: Color(0xFF234F68),
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+            Row(
+              children: const [
+                Property(
+                  name: "Hotel",
+                ),
+                Property(
+                  name: "Villa",
+                ),
+                Property(
+                  name: "Cottage",
+                ),
+              ],
             ),
             Padding(
               padding: const EdgeInsets.all(15),
@@ -426,53 +320,15 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: Row(
-                children: [
-                  Stack(
-                    children: [
-                      Image.asset(
-                        "assets/seven_images/villa1.png",
-                        height: 161,
-                        width: 159,
-                      ),
-                      Positioned(
-                        left: 120,
-                        child: Image.asset(
-                          "assets/seven_images/Edit.png",
-                          height: 30,
-                          width: 30,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(15),
-                    child: Row(
-                      children: [
-                        Stack(
-                          children: [
-                            Image.asset(
-                              "assets/seven_images/villa2.png",
-                              height: 161,
-                              width: 159,
-                            ),
-                            Positioned(
-                              left: 120,
-                              child: Image.asset(
-                                "assets/seven_images/Edit.png",
-                                height: 30,
-                                width: 30,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+            Row(
+              children: const [
+                ListingPhotos(
+                  image: "assets/seven_images/villa1.png",
+                ),
+                ListingPhotos(
+                  image: "assets/seven_images/villa2.png",
+                ),
+              ],
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15, top: 5),
@@ -619,8 +475,9 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                     color: const Color(0xFF234F68),
                   ),
                   child: const Padding(
-                    padding: EdgeInsets.only(left: 18, top: 10),
+                    padding: EdgeInsets.only(top: 9),
                     child: Text(
+                      textAlign: TextAlign.center,
                       "Monthly",
                       style: TextStyle(
                         color: Color(0xFFFFFFFF),
@@ -730,129 +587,52 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
             ),
             const SizedBox(height: 20),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 75,
-                  width: 340,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFF5F4F8),
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  child: Row(
-                    children: [
-                      const SizedBox(width: 10),
-                      const Text(
-                        'Bathroom',
-                        style: TextStyle(
-                          color: Color(0xFF252B5C),
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 120),
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFA1A5C1),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        child: Image.asset(
-                          "assets/seven_images/Minus.png",
-                          height: 10,
-                          width: 10,
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      const Text(
-                        "2",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color(0xFF252B5C),
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFA1A5C1),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        child: Image.asset(
-                          "assets/seven_images/Plus.png",
-                          height: 10.26,
-                          width: 10.26,
-                        ),
-                      ),
-                    ],
-                  ),
+              children: const [
+                PropertyFeatures(
+                  name: "Bathroom",
+                ),
+                PropertyFeatures(
+                  image: "assets/seven_images/Minus.png",
+                ),
+                PropertyFeatures(
+                  image: "assets/seven_images/Plus.png",
+                ),
+                PropertyFeatures(
+                  title: "2",
                 ),
               ],
             ),
             const SizedBox(height: 20),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 75,
-                  width: 340,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFF5F4F8),
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  child: Row(
-                    children: [
-                      const SizedBox(width: 20),
-                      const Text(
-                        'Balcony',
-                        style: TextStyle(
-                          color: Color(0xFF252B5C),
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 125),
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFA1A5C1),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        child: Image.asset(
-                          "assets/seven_images/Minus.png",
-                          height: 10,
-                          width: 10,
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      const Text(
-                        "1",
-                        style: TextStyle(
-                          color: Color(0xFF252B5C),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 25),
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFA1A5C1),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        child: Image.asset(
-                          "assets/seven_images/Plus.png",
-                          height: 10.26,
-                          width: 10.26,
-                        ),
-                      ),
-                    ],
-                  ),
+              children: const [
+                PropertyFeatures(
+                  name: "Bedroom",
+                ),
+                PropertyFeatures(
+                  image: "assets/seven_images/Minus.png",
+                ),
+                PropertyFeatures(
+                  title: "2",
+                ),
+                PropertyFeatures(
+                  image: "assets/seven_images/Plus.png",
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            Row(
+              children: const [
+                PropertyFeatures(
+                  name: "Balcony",
+                ),
+                PropertyFeatures(
+                  image: "assets/seven_images/Minus.png",
+                ),
+                PropertyFeatures(
+                  title: "1",
+                ),
+                PropertyFeatures(
+                  image: "assets/seven_images/Plus.png",
                 ),
               ],
             ),
@@ -874,114 +654,23 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [
-                  const SizedBox(width: 15),
-                  Container(
-                    height: 50,
-                    width: 94,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF5F4F8),
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 10),
-                        Image.asset(
-                          "assets/seven_images/Text.png",
-                          height: 20,
-                          width: 20,
-                        ),
-                        const SizedBox(width: 10),
-                        const Text(
-                          "< 4",
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Color(0xFF252B5C),
-                          ),
-                        ),
-                      ],
-                    ),
+                children: const [
+                  TotalRooms(
+                    image: "assets/seven_images/Text.png",
+                    title: "< 4",
                   ),
-                  const SizedBox(width: 15),
-                  Container(
-                    height: 50,
-                    width: 85,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF5F4F8),
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 10),
-                        Image.asset(
-                          "assets/seven_images/Text.png",
-                          height: 20,
-                          width: 20,
-                        ),
-                        const SizedBox(width: 20),
-                        const Text(
-                          " 4",
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Color(0xFF252B5C),
-                          ),
-                        ),
-                      ],
-                    ),
+                  TotalRooms(
+                    image: "assets/seven_images/Text.png",
+                    title: " 4",
                   ),
-                  const SizedBox(width: 15),
-                  Container(
-                    height: 50,
-                    width: 77,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF234F68),
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 20),
-                        Image.asset(
-                          "assets/seven_images/Text.png",
-                          height: 20,
-                          width: 20,
-                        ),
-                        const SizedBox(width: 10),
-                        const Text(
-                          " 6",
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Color(0xFFFFFFFF),
-                          ),
-                        ),
-                      ],
-                    ),
+                  TotalRooms(
+                    image: "assets/seven_images/Text.png",
+                    title: "6",
+                    color: Color(0xFF234F68),
                   ),
-                  const SizedBox(width: 15),
-                  Container(
-                    height: 50,
-                    width: 94,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF5F4F8),
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 10),
-                        Image.asset(
-                          "assets/seven_images/Text.png",
-                          height: 20,
-                          width: 20,
-                        ),
-                        const SizedBox(width: 10),
-                        const Text(
-                          "> 6",
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Color(0xFF252B5C),
-                          ),
-                        ),
-                      ],
-                    ),
+                  TotalRooms(
+                    image: "assets/seven_images/Text.png",
+                    title: " > 6",
                   ),
                 ],
               ),
@@ -1003,149 +692,38 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
             ),
             const SizedBox(height: 20),
             Row(
-              children: [
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 102,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFF234F68),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 15, top: 10),
-                    child: Text(
-                      "Parking Lot",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        fontSize: 14,
-                      ),
-                    ),
-                  ),
+              children: const [
+                Environment(
+                  title: "Parking Lot",
                 ),
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFF234F68),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 20, top: 10),
-                    child: Text(
-                      "Pet Allowed",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                Environment(
+                  title: "Pet Allowed",
                 ),
               ],
             ),
             const SizedBox(height: 20),
             Row(
-              children: [
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 83,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFF234F68),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 15, top: 10),
-                    child: Text(
-                      "Garden",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+              children: const [
+                Facilities(
+                  title: "Garden",
+                  color: Color(0xFF234F68),
                 ),
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 70,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFF5F4F8),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 20, top: 10),
-                    child: Text(
-                      "Gym",
-                      style: TextStyle(
-                        color: Color(0xFF234F68),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                Facilities(
+                  title: "Gym",
                 ),
-                const SizedBox(width: 30),
-                Container(
-                  height: 47,
-                  width: 69,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFF5F4F8),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 20, top: 10),
-                    child: Text(
-                      "Park",
-                      style: TextStyle(
-                        color: Color(0xFF234F68),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                Facilities(
+                  title: "Park",
                 ),
               ],
             ),
             const SizedBox(height: 20),
             Row(
-              children: [
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFF5F4F8),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 10, top: 10),
-                    child: Text(
-                      "Home theatre",
-                      style: TextStyle(
-                        color: Color(0xFF234F68),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+              children: const [
+                Environments(
+                  title: "Home theatre",
                 ),
-                const SizedBox(width: 20),
-                Container(
-                  height: 47,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFF5F4F8),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 15, top: 10),
-                    child: Text(
-                      "Kid’s Friendly",
-                      style: TextStyle(
-                        color: Color(0xFF234F68),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                Environments(
+                  title: "Kid’s Friendly",
                 ),
               ],
             ),

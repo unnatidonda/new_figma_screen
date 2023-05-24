@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'figma_screen/figma_sem_screen.dart';
+import 'package:new_figma_screen/figma_screen/eight_figma_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins',
       ),
-      home: const FigmaSemScreen(),
+      home: const EightFigmaScreen(),
     );
   }
 }
