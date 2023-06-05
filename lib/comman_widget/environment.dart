@@ -17,7 +17,7 @@ class Environment extends StatelessWidget {
             color: const Color(0xFF234F68),
           ),
           child: Padding(
-            padding: EdgeInsets.only(top: 10),
+            padding: EdgeInsets.only(top: 12),
             child: Text(
               textAlign: TextAlign.center,
               title ?? "",

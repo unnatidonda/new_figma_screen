@@ -31,7 +31,7 @@ class TotalRooms extends StatelessWidget {
               Text(
                 textAlign: TextAlign.center,
                 title ?? "",
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 15,
                   color: Color(0xFF252B5C),
                 ),

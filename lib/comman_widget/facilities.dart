@@ -18,11 +18,11 @@ class Facilities extends StatelessWidget {
             color: const Color(0xFFF5F4F8),
           ),
           child: Padding(
-            padding: EdgeInsets.only(top: 10),
+            padding:  const EdgeInsets.only(top: 10),
             child: Text(
               textAlign: TextAlign.center,
               title ?? "",
-              style: TextStyle(
+              style:   const TextStyle(
                 color: Color(0xFF234F68),
                 fontSize: 15,
               ),

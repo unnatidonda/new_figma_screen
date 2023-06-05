@@ -112,10 +112,10 @@ class _FiveFigmaScreenState extends State<FiveFigmaScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(5),
+                  const Padding(
+                    padding: EdgeInsets.all(5),
                     child: Column(
-                      children: const [
+                      children: [
                         Text(
                           "10k",
                           style: TextStyle(
@@ -144,10 +144,10 @@ class _FiveFigmaScreenState extends State<FiveFigmaScreen> {
                     ),
                   ),
                   const SizedBox(width: 15),
-                  Padding(
-                    padding: const EdgeInsets.all(5),
+                  const Padding(
+                    padding: EdgeInsets.all(5),
                     child: Column(
-                      children: const [
+                      children: [
                         Text(
                           "4.7k",
                           style: TextStyle(
@@ -270,8 +270,8 @@ class _FiveFigmaScreenState extends State<FiveFigmaScreen> {
               ],
             ),
             const SizedBox(height: 10),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Expanded(
                   child: Divider(
                     thickness: 3,
@@ -357,8 +357,8 @@ class _FiveFigmaScreenState extends State<FiveFigmaScreen> {
                       ),
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    child: Column(
-                      children: const [
+                    child: const Column(
+                      children: [
                         Text(
                           " Collectibles ",
                           style: TextStyle(
@@ -384,8 +384,8 @@ class _FiveFigmaScreenState extends State<FiveFigmaScreen> {
                       ),
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    child: Column(
-                      children: const [
+                    child: const Column(
+                      children: [
                         Text(
                           "Domain Names",
                           style: TextStyle(

@@ -522,118 +522,22 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 75,
-                  width: 340,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFF5F4F8),
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  child: Row(
-                    children: [
-                      const SizedBox(width: 15),
-                      const Text(
-                        'Bedroom',
-                        style: TextStyle(
-                          color: Color(0xFF252B5C),
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(width: 120),
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFA1A5C1),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        child: Image.asset(
-                          "assets/seven_images/Minus.png",
-                          height: 10,
-                          width: 10,
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      const Text(
-                        "2",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xFF252B5C),
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFA1A5C1),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        child: Image.asset(
-                          "assets/seven_images/Plus.png",
-                          height: 10.26,
-                          width: 10.26,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            Row(
-              children: const [
-                PropertyFeatures(
-                  name: "Bathroom",
-                ),
-                PropertyFeatures(
-                  image: "assets/seven_images/Minus.png",
-                ),
-                PropertyFeatures(
-                  image: "assets/seven_images/Plus.png",
-                ),
-                PropertyFeatures(
-                  title: "2",
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            Row(
+            Column(
               children: const [
                 PropertyFeatures(
                   name: "Bedroom",
+                  number: "2",
                 ),
+                SizedBox(height: 15),
                 PropertyFeatures(
-                  image: "assets/seven_images/Minus.png",
+                  name: "Bathroom",
+                  number: "2",
                 ),
-                PropertyFeatures(
-                  title: "2",
-                ),
-                PropertyFeatures(
-                  image: "assets/seven_images/Plus.png",
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            Row(
-              children: const [
+                SizedBox(height: 15),
                 PropertyFeatures(
                   name: "Balcony",
-                ),
-                PropertyFeatures(
-                  image: "assets/seven_images/Minus.png",
-                ),
-                PropertyFeatures(
-                  title: "1",
-                ),
-                PropertyFeatures(
-                  image: "assets/seven_images/Plus.png",
-                ),
+                  number: "1",
+                )
               ],
             ),
             Padding(
@@ -666,7 +570,6 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                   TotalRooms(
                     image: "assets/seven_images/Text.png",
                     title: "6",
-                    color: Color(0xFF234F68),
                   ),
                   TotalRooms(
                     image: "assets/seven_images/Text.png",
