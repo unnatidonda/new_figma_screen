@@ -8,9 +8,102 @@ class TenthFigmaScreen extends StatefulWidget {
 }
 
 class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
+  Map mapdata = {
+    "text": "black color",
+  };
+
+  List<Map<String, dynamic>> textList = [
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Nike Air Force 1 ‘07",
+      "color": "Colors.black",
+      "name": "Revolutionary sneakers",
+    },
+    {
+      "image": "assets/images/shoes2.png",
+      "title": "Nike Air Force 1 ‘07",
+      "color": "Colors.black",
+      "name": "Revolutionary sneakers",
+    },
+    {
+      "image": "assets/images/shoes3.png",
+      "title": "Nike Air Force 1 ‘07",
+      "color": "Colors.black",
+      "name": "Revolutionary sneakers",
+    },
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Nike Air Force 1 ‘07",
+      "color": "Colors.black",
+      "name": "Revolutionary sneakers",
+    },
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Explore more",
+      "color": "Colors.black",
+      "name": "Revolutionary sneakers",
+    },
+  ];
+  List<Map<String, dynamic>> imageList = [
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Nike Air Max 97",
+      "name": "Innovative and comfortable",
+    },
+    {
+      "image": "assets/images/shoes2.png",
+      "title": "Nike Air Max 97",
+      "name": "Innovative and comfortable",
+    },
+    {
+      "image": "assets/images/shoes3.png",
+      "title": "Nike Air Max 97",
+      "name": "Innovative and comfortable",
+    },
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Nike Air Max 97",
+      "name": "Innovative and comfortable",
+    },
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Explore more",
+      "name": "Innovative and comfortable",
+    },
+  ];
+
+  List<Map<String, dynamic>> dataList = [
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Nike Court Vision Mid",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images/shoes2.png",
+      "title": "Nike Court Vision Mid",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images/shoes3.png",
+      "title": "Nike Court Vision Mid",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Explore more",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images/shoes1.png",
+      "title": "Explore more",
+      "name": "Vintage and retro",
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           Container(
@@ -40,37 +133,32 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
                         style: TextStyle(
                           fontSize: 38,
                           fontFamily: "Teko",
+                          fontStyle: FontStyle.normal,
                           color: Color(0xFF000000),
                           fontWeight: FontWeight.w800,
                         ),
                       ),
-                      const Row(
-                        children: [
-                          Text(
-                            textAlign: TextAlign.center,
-                            "50% Off",
-                            style: TextStyle(
-                              fontSize: 38,
-                              fontFamily: "Teko",
-                              color: Color(0xFF000000),
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ],
+                      const Text(
+                        textAlign: TextAlign.center,
+                        "50% Off",
+                        style: TextStyle(
+                          fontSize: 38,
+                          fontFamily: "Teko",
+                          fontStyle: FontStyle.normal,
+                          color: Color(0xFF000000),
+                          fontWeight: FontWeight.w800,
+                        ),
                       ),
-                      const Row(
-                        children: [
-                          Text(
-                            textAlign: TextAlign.center,
-                            "Make your new year\nwith new look",
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontFamily: "Teko",
-                              color: Color(0xFF000000),
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ],
+                      const Text(
+                        textAlign: TextAlign.center,
+                        "Make your new year\nwith new look",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontFamily: "Teko",
+                          fontStyle: FontStyle.normal,
+                          color: Color(0xFF000000),
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                       const SizedBox(height: 20),
                       Row(
@@ -102,6 +190,135 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
               ],
             ),
           ),
+          SizedBox(
+            height: 184,
+            child: ListView.separated(
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              // itemCount: dataList.length,
+              padding: const EdgeInsets.only(left: 14),
+              separatorBuilder: (context, index) => const SizedBox(width: 30),
+              itemBuilder: (context, index) => Container(
+                height: 184,
+                width: 111,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    width: 01,
+                    color: const Color(0xFFCCCCCC),
+                  ),
+                ),
+                child: index == 3
+                    ? const Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.search,
+                            size: 64,
+                            color: Color(0xFF000000),
+                          ),
+                          SizedBox(
+                            height: 08,
+                          ),
+                          Text(
+                            "Explore More",
+                            style: TextStyle(
+                              fontFamily: "SofiaSans",
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF000000),
+                            ),
+                          ),
+                        ],
+                      )
+                    : Column(
+                        children: [
+                          const SizedBox(
+                            height: 11,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                dataList[index]["image"],
+                                width: 111,
+                                height: 140,
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                dataList[index]["title"],
+                                style: const TextStyle(
+                                  fontFamily: "Sofia Sans",
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xFFEEEEEE),
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 07,
+                          ),
+                          //  Row(
+                          //   children: [
+                          //     SizedBox(
+                          //       width: 15,
+                          //     ),
+                          //     Shose_Two(name: "\$64", title: "New"),
+                          //   ],
+                          // ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                dataList[index]["name"],
+                                style: const TextStyle(
+                                  fontFamily: "Sofia Sans",
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 20,
+                                  color: Color(0xFF000000),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+              ),
+              itemCount: 4,
+            ),
+          ),
+          // const SizedBox(
+          //   height: 40,
+          // ),
+          // const Row(
+          //   crossAxisAlignment: CrossAxisAlignment.start,
+          //   children: [
+          //     SizedBox(
+          //       width: 20,
+          //     ),
+          //     Text(
+          //       "Shop by tag",
+          //       style: TextStyle(
+          //         fontSize: 22,
+          //         color: Color(0xFF000000),
+          //         fontWeight: FontWeight.bold,
+          //         fontFamily: "Sofia Sans",
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ],
       ),
     );
