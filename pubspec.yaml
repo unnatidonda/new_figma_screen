@@ -63,6 +63,7 @@ flutter:
     - assets/font/
     - assets/images/
     - assets/seven_images/
+
 #    - assets/eight_images/
 
   # An image asset can refer to one or more resolution-specific "variants", see

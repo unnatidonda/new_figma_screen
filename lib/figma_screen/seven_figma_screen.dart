@@ -68,8 +68,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                   ],
                 ),
                 const SizedBox(height: 30),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Text(
                       "Explore",
                       style: TextStyle(
@@ -80,8 +80,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                   ],
                 ),
                 const SizedBox(height: 15),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Text(
                       "Best Outfits for you",
                       style: TextStyle(color: Colors.grey),
@@ -273,8 +273,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                   ),
                 ),
                 const SizedBox(height: 30),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Text(
                       "Today’s Deal",
                       style: TextStyle(
@@ -326,8 +326,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                   "assets/images/66991d203bfd1ea71019a58df0246eff-removebg-preview.png",
                                 ),
                               ),
-                              Row(
-                                children: const [
+                              const Row(
+                                children: [
                                   SizedBox(width: 7),
                                   Text(
                                     textAlign: TextAlign.start,
@@ -379,8 +379,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                   "assets/images/0f76da755e29ab36163197ff151f8f97-removebg-preview.png",
                                 ),
                               ),
-                              Row(
-                                children: const [
+                              const Row(
+                                children: [
                                   SizedBox(width: 7),
                                   Text(
                                     textAlign: TextAlign.start,
@@ -429,8 +429,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
-                              Row(
-                                children: const [
+                              const Row(
+                                children: [
                                   SizedBox(width: 7),
                                   Text(
                                     textAlign: TextAlign.start,
@@ -458,10 +458,10 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 20),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20),
                   child: Row(
-                    children: const [
+                    children: [
                       Text(
                         "Popular",
                         style: TextStyle(
@@ -511,8 +511,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
-                              Row(
-                                children: const [
+                              const Row(
+                                children: [
                                   SizedBox(width: 7),
                                   Text(
                                     textAlign: TextAlign.start,
@@ -560,8 +560,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
-                              Row(
-                                children: const [
+                              const Row(
+                                children: [
                                   SizedBox(width: 7),
                                   Text(
                                     textAlign: TextAlign.start,
@@ -609,8 +609,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
-                              Row(
-                                children: const [
+                              const Row(
+                                children: [
                                   SizedBox(width: 7),
                                   Text(
                                     textAlign: TextAlign.start,
@@ -638,10 +638,10 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 20),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20),
                   child: Row(
-                    children: const [
+                    children: [
                       Text(
                         "New Arrival",
                         style: TextStyle(
@@ -681,8 +681,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -731,8 +731,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -787,8 +787,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -837,8 +837,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -893,8 +893,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -943,8 +943,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -999,8 +999,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -1049,8 +1049,8 @@ class _SevenFigmaScreenState extends State<SevenFigmaScreen> {
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 SizedBox(width: 7),
                                 Text(
                                   textAlign: TextAlign.start,

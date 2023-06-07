@@ -143,10 +143,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Listing Title",
                     style: TextStyle(
@@ -190,10 +190,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Listing type",
                     style: TextStyle(
@@ -205,8 +205,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 ListType(
                   name: "Rent",
                 ),
@@ -215,10 +215,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Property category",
                     style: TextStyle(
@@ -230,8 +230,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 PropertyCategory(
                   name: "House",
                 ),
@@ -240,8 +240,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Property(
                   name: "Hotel",
                 ),
@@ -253,10 +253,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(15),
+            const Padding(
+              padding: EdgeInsets.all(15),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Location",
                     style: TextStyle(
@@ -305,10 +305,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10),
+            const Padding(
+              padding: EdgeInsets.all(10),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Listing Photos",
                     style: TextStyle(
@@ -320,8 +320,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 ListingPhotos(
                   image: "assets/seven_images/villa1.png",
                 ),
@@ -369,10 +369,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Sell Price",
                     style: TextStyle(
@@ -416,10 +416,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Rent Price",
                     style: TextStyle(
@@ -507,10 +507,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Property Features",
                     style: TextStyle(
@@ -522,8 +522,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Column(
-              children: const [
+            const Column(
+              children: [
                 PropertyFeatures(
                   name: "Bedroom",
                   number: "2",
@@ -540,10 +540,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 )
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Total Rooms",
                     style: TextStyle(
@@ -555,10 +555,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: const [
+                children: [
                   TotalRooms(
                     image: "assets/seven_images/Text.png",
                     title: "< 4",
@@ -578,10 +578,10 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     "Environment / Facilities",
                     style: TextStyle(
@@ -594,8 +594,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Environment(
                   title: "Parking Lot",
                 ),
@@ -605,8 +605,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
               ],
             ),
             const SizedBox(height: 20),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Facilities(
                   title: "Garden",
                   color: Color(0xFF234F68),
@@ -620,8 +620,8 @@ class _EightFigmaScreenState extends State<EightFigmaScreen> {
               ],
             ),
             const SizedBox(height: 20),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Environments(
                   title: "Home theatre",
                 ),
