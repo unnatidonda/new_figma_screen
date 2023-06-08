@@ -21,10 +21,10 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
           padding: const EdgeInsets.all(5),
           child: Column(
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.notifications_none,
                     size: 30,
                     color: Color(0xFFBDBDBD),
@@ -32,7 +32,7 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                   Column(
                     children: [
                       Row(
-                        children: const [
+                        children: [
                           Icon(
                             Icons.location_on_outlined,
                             size: 25,
@@ -52,7 +52,7 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                           ),
                         ],
                       ),
-                      const Text(
+                      Text(
                         "9, suramya duplex, nr. nigam bus stand.....",
                         style: TextStyle(
                           fontSize: 13,
@@ -62,7 +62,7 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                       ),
                     ],
                   ),
-                  const Icon(
+                  Icon(
                     Icons.favorite_border,
                     size: 30,
                     color: Color(0xFFBDBDBD),
@@ -78,9 +78,9 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                     height: 52,
                     width: 315,
                     color: const Color(0xFF161616),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: const [
+                      children: [
                         Icon(Icons.search_rounded, color: Color(0xFFBDBDBD), size: 30),
                         Text(
                           "Name ur mood...",
@@ -108,7 +108,7 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -122,14 +122,14 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                           "assets/images/Offer main (2).png",
                           width: 380,
                         ),
-                        Row(
+                        const Row(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 8, bottom: 8),
+                              padding: EdgeInsets.only(left: 8, bottom: 8),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
+                                children: [
                                   Text(
                                     "Get your first order at",
                                     style: TextStyle(
@@ -151,7 +151,7 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                             Column(
                               mainAxisAlignment: MainAxisAlignment.end,
                               crossAxisAlignment: CrossAxisAlignment.end,
-                              children: const [
+                              children: [
                                 Text(
                                   "Dive in now.",
                                   style: TextStyle(
@@ -178,9 +178,9 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
               const SizedBox(
                 height: 30,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
                     "What’s your mood today?",
                     style: TextStyle(
@@ -197,13 +197,13 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
+              const Padding(
+                padding: EdgeInsets.only(top: 20),
                 child: SizedBox(
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      children: const [
+                      children: [
                         FoodTile(
                           image: "assets/images/snacks.png",
                           name: "snacks",
@@ -272,9 +272,9 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
               const SizedBox(
                 height: 30,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
                     "Popular moods you can get",
                     style: TextStyle(
@@ -299,11 +299,11 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
               const SizedBox(
                 height: 20,
               ),
-              SizedBox(
+              const SizedBox(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: const [
+                    children: [
                       FoodLogo(
                         name: "Domino’s",
                         image: "assets/images/Domino's_pizza_logo .png",
@@ -371,9 +371,9 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
               const SizedBox(
                 height: 30,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
                     "Nearby moods around you",
                     style: TextStyle(
@@ -397,8 +397,8 @@ class _FigmaSemScreenState extends State<FigmaSemScreen> {
               const SizedBox(
                 height: 10,
               ),
-              Column(
-                children: const [
+              const Column(
+                children: [
                   FoodPizza(
                     image: "assets/images/pav Bhaji.png",
                     title: "North Indian, Snacks",

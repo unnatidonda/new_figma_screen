@@ -554,7 +554,7 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
               const Row(
                 children: [
                   SizedBox(width: 10),
@@ -579,28 +579,259 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
                   ),
                 ],
               ),
-              Row(
-                children: [
-                  SingleChildScrollView(
-                    child: Container(
+              const SizedBox(height: 15),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    const SizedBox(width: 12),
+                    Container(
                       height: 190,
                       width: 230,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFF26282A),
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset(
                             "assets/images/shoes6.png",
                             width: 230,
                             height: 120,
                           ),
-                          Text(
-                            "Jordan 1 Starter Pack",
-
+                          const SizedBox(height: 10),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.right,
+                              "Jordan 1 Starter Pack",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.start,
+                              "12,920 shoes",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFF92989E),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
                           ),
                         ],
                       ),
+                    ),
+                    const SizedBox(width: 12),
+                    Container(
+                      height: 190,
+                      width: 230,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF26282A),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            "assets/images/shoes7.png",
+                            width: 230,
+                            height: 120,
+                          ),
+                          const SizedBox(height: 10),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.right,
+                              "Sneaker Ultimate Pack",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.start,
+                              "817 shoes",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFF92989E),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Container(
+                      height: 190,
+                      width: 230,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF26282A),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            "assets/images/shoes8.png",
+                            width: 230,
+                            height: 120,
+                          ),
+                          const SizedBox(height: 10),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.right,
+                              "Skate Essentials Pack",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.start,
+                              "83,080 shoes",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFF92989E),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Container(
+                      height: 190,
+                      width: 230,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF26282A),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            "assets/images/shoes9.png",
+                            width: 230,
+                            height: 120,
+                          ),
+                          const SizedBox(height: 10),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.right,
+                              "Golf Essentials Pack",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              textAlign: TextAlign.start,
+                              "771 shoes",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFF92989E),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+              Stack(
+                children: [
+                  Image.asset(
+                    "assets/images/banner.png",
+                    height: 536,
+                    width: 435,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 100, top: 300),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        const Text(
+                          "      Start Your Life\nwith Nike Sneaker",
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontFamily: "Teko/Large",
+                            color: Color(0xFF000000),
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        const SizedBox(height: 18),
+                        const Text(
+                          textAlign: TextAlign.start,
+                          "Shop over 400 colorways",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontFamily: "Teko/Large",
+                            color: Color(0xFF000000),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const SizedBox(height: 22),
+                        Container(
+                          height: 40,
+                          width: 120,
+                          decoration: const BoxDecoration(
+                            color: Color(0xFF000000),
+                          ),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 5.0),
+                            child: Text(
+                              textAlign: TextAlign.center,
+                              "Shop Now",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              const Row(
+                children: [
+                  SizedBox(width: 15),
+                  Text(
+                    "Recommended for You",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: "Satoshi",
+                      color: Color(0xFFFFFFFF),
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                 ],

@@ -134,9 +134,9 @@ class _ThreeFigmaScreenState extends State<ThreeFigmaScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 Expanded(
                   child: Divider(
                     thickness: 2,
