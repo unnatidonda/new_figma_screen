@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_figma_screen/figma_screen/eleven_screen.dart';
+import 'package:new_figma_screen/figma_screen/eleven_second_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins',
       ),
-      home: const ElevenScreen(),
+      home: const ElevenSecondScreen(),
     );
   }
 }

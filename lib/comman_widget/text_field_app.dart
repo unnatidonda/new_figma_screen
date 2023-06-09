@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class TextFieldApp extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
-
   final String? image;
   const TextFieldApp({Key? key, this.controller, this.hintText, this.image}) : super(key: key);
 
@@ -28,6 +27,11 @@ class TextFieldApp extends StatelessWidget {
                   width: 2,
                 ),
               ),
+              // suffixIcon: Image.asset(
+              //   "assets/images/Hide.png",
+              //   height: 25,
+              //   width: 25,
+              // ),
               hintText: hintText ?? "",
               hintStyle: const TextStyle(
                 color: Color(0xFF8C8A87),
