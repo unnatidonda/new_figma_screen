@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_figma_screen/comman_widget/text_field_app.dart';
+import 'package:new_figma_screen/figma_screen/eleven_second_screen.dart';
 
 class ElevenScreen extends StatefulWidget {
   const ElevenScreen({Key? key}) : super(key: key);
@@ -193,23 +194,40 @@ class _ElevenScreenState extends State<ElevenScreen> {
                     ],
                   ),
                   const SizedBox(height: 30),
-                  Container(
-                    height: 55,
-                    width: 341,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF9D9B97),
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: Text(
-                        textAlign: TextAlign.center,
-                        "Get Started",
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontFamily: "Circular Std",
-                          fontWeight: FontWeight.w700,
-                          color: Color(0xFFFFFFFF),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ElevenSecondScreen(),
+                        ),
+                      );
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ElevenSecondScreen(),
+                        ),
+                        (route) => false,
+                      );
+                    },
+                    child: Container(
+                      height: 55,
+                      width: 341,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF9D9B97),
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Text(
+                          textAlign: TextAlign.center,
+                          "Get Started",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontFamily: "Circular Std",
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFFFFFFFF),
+                          ),
                         ),
                       ),
                     ),

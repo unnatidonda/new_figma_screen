@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_figma_screen/comman_widget/categories.dart';
+import 'package:new_figma_screen/comman_widget/recommended.dart';
 
 class TenthFigmaScreen extends StatefulWidget {
   const TenthFigmaScreen({Key? key}) : super(key: key);
@@ -12,7 +13,6 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
   Map mapdata = {
     "text": "black color",
   };
-
   // List<Map<String, dynamic>> textList = [
   //   {
   //     "image": "assets/images/shoes1.png",
@@ -835,6 +835,108 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
                     ),
                   ),
                 ],
+              ),
+              const SizedBox(height: 15),
+              const SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Recommended(
+                      image: "assets/images/shoes10.png",
+                      title: "Men’s shoes",
+                      name: "Nike Air Max Dawn \nSE",
+                      price: "\$ 260",
+                    ),
+                    SizedBox(width: 12),
+                    Recommended(
+                      image: "assets/images/shoes11.png",
+                      title: "Men’s shoes",
+                      name: "Air Jordan 6 Retro",
+                      price: "\$125",
+                    ),
+                    SizedBox(width: 12),
+                    Recommended(
+                      image: "assets/images/shoes12.png",
+                      title: "Men’s shoes",
+                      name: "Nike Wearallday",
+                      price: "\$ 135",
+                    ),
+                    SizedBox(width: 12),
+                    Recommended(
+                      image: "assets/images/shoes14.png",
+                      title: "Men’s shoes",
+                      name: "Nike Air Force 1\n '07 ESS",
+                      price: "\$151",
+                    ),
+                    SizedBox(width: 12),
+                    Recommended(
+                      image: "assets/images/shoes13.png",
+                      title: "Men’s shoes",
+                      name: "Nike FreeTerra Vista Next Nature",
+                      price: "\$110",
+                    ),
+                    SizedBox(width: 12),
+                    Recommended(
+                      image: "assets/images/shoes15.png",
+                      title: "Men’s shoes",
+                      name: "Nike ACG Mountain Fly Low SE",
+                      price: "\$ 170",
+                    ),
+                  ],
+                ),
+              ),
+              Stack(
+                children: [
+                  Image.asset(
+                    "assets/images/banner2.png",
+                    width: 405,
+                    height: 400,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 50, top: 280),
+                    child: Text(
+                      "Sneaker Collections",
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xFFFFFFFF),
+                        fontFamily: "Teko",
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 50, top: 330),
+                    child: Container(
+                      height: 40,
+                      width: 178,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFFFFFFFF),
+                      ),
+                      child: const Text(
+                        textAlign: TextAlign.center,
+                        "See All Collections",
+                        style: TextStyle(
+                          fontFamily: "Satoshi",
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF000000),
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                height: 84,
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Color(0xFF26282A),
+                ),
+                child: Image.asset(
+                  "assets/images/adidas.png",
+                  height: 64,
+                  width: 64,
+                ),
               ),
             ],
           ),

@@ -22,12 +22,13 @@ class _ElevenSecondScreenState extends State<ElevenSecondScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(width: 20),
-                  const Icon(
-                    Icons.arrow_back_ios_sharp,
-                    weight: 12.6,
-                    size: 25,
-                    color: Color(0xFF000000),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back_ios_sharp,
+                    ),
                   ),
                   const SizedBox(height: 30),
                   const Text(
