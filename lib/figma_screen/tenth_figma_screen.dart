@@ -1086,7 +1086,7 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
                         Stack(
                           children: [
                             Image.asset(
-                              list[index]["image"],
+                              arrayList[index]["image"],
                               height: 150,
                               width: 171,
                             ),
