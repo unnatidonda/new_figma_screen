@@ -93,6 +93,7 @@ class _TwelveScreenState extends State<TwelveScreen> {
                   name: "Side Item",
                   title: "REQUIRED",
                 ),
+                const SizedBox(width: 40),
                 const SizedBox(height: 25),
                 Row(
                   children: [
@@ -258,6 +259,7 @@ class _TwelveScreenState extends State<TwelveScreen> {
                 const Item(
                   name: "Edit Cheeseburger",
                 ),
+                const SizedBox(height: 15),
                 Row(
                   children: [
                     const SizedBox(width: 35),
@@ -515,6 +517,15 @@ class _TwelveScreenState extends State<TwelveScreen> {
                   ],
                 ),
                 const SizedBox(height: 15),
+                const Row(
+                  children: [
+                    FoodItem(
+                      name: "Sesame Seed Bun",
+                      image: "assets/images/Frame9.png",
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 60),
                 Row(
                   children: [
                     const SizedBox(width: 15),

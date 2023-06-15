@@ -16,27 +16,35 @@ class Item extends StatelessWidget {
       ),
       child: Row(
         children: [
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Text(
             textAlign: TextAlign.start,
             name ?? "",
-            style: TextStyle(
+            style: const TextStyle(
               fontFamily: "Everett",
               fontSize: 21,
               fontWeight: FontWeight.w400,
               color: Color(0xFF000000),
             ),
           ),
-          SizedBox(width: 150),
+          const SizedBox(width: 150),
           Text(
             textAlign: TextAlign.start,
             title ?? "",
-            style: TextStyle(
+            style: const TextStyle(
               fontFamily: "Everett",
               fontSize: 15,
               fontWeight: FontWeight.w400,
               color: Color(0xFF28B996),
             ),
+          ),
+          IconButton(
+            icon: const Icon(
+              Icons.do_not_disturb_on_rounded,
+              color: Color(0xFFB3BFCB),
+              size: 32,
+            ),
+            onPressed: () {},
           ),
         ],
       ),
