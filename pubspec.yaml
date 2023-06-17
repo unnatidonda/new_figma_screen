@@ -80,13 +80,13 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-#        - asset: assets/fonts/Alkatra-Bold.ttf
-#        - asset: assets/fonts/Alkatra-Medium.ttf
-#        - asset: assets/fonts/Alkatra-Regular.ttf
-#        - asset: assets/fonts/Alkatra-SemiBold.ttf
-#        - asset: assets/fonts/Poppins-MediumItalic.ttf
-         - asset: assets/fonts/Poppins-Medium.ttf
-#         - asset: assets/fonts/Lora.zip
+        - asset: assets/fonts/Alkatra-Bold.ttf
+        - asset: assets/fonts/Alkatra-Medium.ttf
+        - asset: assets/fonts/Alkatra-Regular.ttf
+        - asset: assets/fonts/Alkatra-SemiBold.ttf
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Lora.zip
 
 
 

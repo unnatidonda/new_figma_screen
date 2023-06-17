@@ -20,10 +20,13 @@ class _TwelveScreenState extends State<TwelveScreen> {
               children: [
                 Row(
                   children: [
-                    const Icon(
-                      Icons.arrow_back_rounded,
-                      size: 36,
-                      color: Color(0xFF292D32),
+                    IconButton(
+                      icon: const Icon(
+                        Icons.arrow_back_rounded,
+                        color: Color(0xFF292D32),
+                        size: 36,
+                      ),
+                      onPressed: () {},
                     ),
                     const SizedBox(width: 20),
                     const Text(
