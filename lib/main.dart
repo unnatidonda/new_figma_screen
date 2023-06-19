@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_figma_screen/figma_screen/twelve_screen.dart';
+import 'package:new_figma_screen/figma_screen/buttons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins',
       ),
-      home: const TwelveScreen(),
+      home: const Buttons(),
     );
   }
 }
