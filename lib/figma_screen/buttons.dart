@@ -92,6 +92,12 @@ class _ButtonsState extends State<Buttons> {
                 },
               ),
               Checkbox(
+                focusColor: Colors.lightBlueAccent,
+                hoverColor: Colors.green,
+                activeColor: Colors.greenAccent,
+                fillColor: MaterialStateColor.resolveWith(
+                  (states) => const Color(0xFFF4739E),
+                ),
                 onChanged: (value) {
                   debugPrint("value ----> &value");
                   setState(() {
