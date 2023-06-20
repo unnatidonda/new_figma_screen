@@ -924,10 +924,10 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
           ),
           Expanded(
             child: GridView.builder(
-              itemCount: arrayList.length,
+              itemCount: 4,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisExtent: 280,
+                mainAxisExtent: 300,
               ),
               itemBuilder: (context, index) => Container(
                 decoration: BoxDecoration(
@@ -1038,7 +1038,7 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
                               ),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -1065,7 +1065,7 @@ class _TenthFigmaScreenState extends State<TenthFigmaScreen> {
               itemCount: list.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisExtent: 290,
+                mainAxisExtent: 300,
               ),
               itemBuilder: (context, index) => Container(
                 decoration: BoxDecoration(

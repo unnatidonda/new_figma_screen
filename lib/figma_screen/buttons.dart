@@ -107,21 +107,21 @@ class _ButtonsState extends State<Buttons> {
                 },
                 value: checkbox,
               ),
-              // Radio(
-              //     value: 1,
-              //     groupValue: radiobutton,
-              //     onChanged: (value) {
-              //       debugPrint("value ----> $value");
-              //       setState(() {});
-              //     }),
-              // Radio(
-              //     value: 2,
-              //     groupValue: radiobutton,
-              //     onChanged: (value) {
-              //       // radiobutton = value;
-              //       debugPrint("value ----> $value");
-              //       setState(() {});
-              //     }),
+              Radio(
+                  value: 1,
+                  groupValue: radiobutton,
+                  onChanged: (value) {
+                    debugPrint("value ----> $value");
+                    setState(() {});
+                  }),
+              Radio(
+                  value: 2,
+                  groupValue: radiobutton,
+                  onChanged: (value) {
+                    // radiobutton = value;
+                    debugPrint("value ----> $value");
+                    setState(() {});
+                  }),
             ],
           ),
         ),
