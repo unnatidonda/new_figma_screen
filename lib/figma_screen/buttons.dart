@@ -11,6 +11,7 @@ class Buttons extends StatefulWidget {
 class _ButtonsState extends State<Buttons> {
   bool switchvalue = true;
   bool checkbox = true;
+  bool radiobutton = false;
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +74,7 @@ class _ButtonsState extends State<Buttons> {
                 activeTrackColor: Colors.purple,
                 hoverColor: Colors.pinkAccent,
                 onChanged: (value) {
-                  debugPrint("value ----> &value");
+                  debugPrint("value ----> $value");
                   setState(() {
                     switchvalue = value;
                   });
@@ -85,7 +86,7 @@ class _ButtonsState extends State<Buttons> {
                 focusColor: Colors.purpleAccent,
                 value: switchvalue,
                 onChanged: (value) {
-                  debugPrint("value ----> &value");
+                  debugPrint("value ----> $value");
                   setState(() {
                     switchvalue = value;
                   });
@@ -99,20 +100,28 @@ class _ButtonsState extends State<Buttons> {
                   (states) => const Color(0xFFF4739E),
                 ),
                 onChanged: (value) {
-                  debugPrint("value ----> &value");
+                  debugPrint("value ----> $value");
                   setState(() {
                     checkbox = value!;
                   });
                 },
                 value: checkbox,
               ),
-              // RadioListTile(
-              //   value: data['index'],
-              //   groupValue: radioListButton,
-              //   onChanged: (value) {
-              //     setState(() {});
-              //   },
-              // ),
+              Radio(
+                  value: 1,
+                  groupValue: radiobutton,
+                  onChanged: (value) {
+                    debugPrint("value ----> $value");
+                    setState(() {});
+                  }),
+              Radio(
+                  value: 2,
+                  groupValue: radiobutton,
+                  onChanged: (value) {
+                    // radiobutton = value;
+                    debugPrint("value ----> $value");
+                    setState(() {});
+                  }),
             ],
           ),
         ),
