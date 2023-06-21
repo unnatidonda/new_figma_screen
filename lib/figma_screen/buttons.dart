@@ -11,7 +11,17 @@ class Buttons extends StatefulWidget {
 class _ButtonsState extends State<Buttons> {
   bool switchvalue = true;
   bool checkbox = true;
-  bool radiobutton = false;
+  int? radiobutton = 1;
+  int? dropDownValue = 2;
+  List<String> items = [
+    'Item 1',
+    'Item 2',
+    'Item 3',
+    'Item 4',
+  ];
+  String? selectedItem = 'Item 1';
+
+  get colorTextList => null;
 
   @override
   Widget build(BuildContext context) {
@@ -108,24 +118,51 @@ class _ButtonsState extends State<Buttons> {
                 value: checkbox,
               ),
               Radio(
+                  activeColor: Colors.black,
+                  hoverColor: Colors.redAccent,
+                  focusColor: Colors.blueAccent,
+                  // overlayColor: MaterialStateColor.resolveWith((states) => Color(0xFFE19595)),
+                  fillColor: MaterialStateColor.resolveWith((states) => const Color(0xFF000000)),
                   value: 1,
                   groupValue: radiobutton,
                   onChanged: (value) {
+                    radiobutton = value;
                     debugPrint("value ----> $value");
                     setState(() {});
                   }),
               Radio(
+                  activeColor: Colors.black,
+                  hoverColor: Colors.redAccent,
+                  focusColor: Colors.blueAccent,
+                  // overlayColor: MaterialStateColor.resolveWith((states) => Color(0xFFE19595)),
+                  fillColor: MaterialStateColor.resolveWith((states) => const Color(0xFF000000)),
                   value: 2,
                   groupValue: radiobutton,
                   onChanged: (value) {
-                    // radiobutton = value;
+                    dropDownValue = value!;
                     debugPrint("value ----> $value");
                     setState(() {});
                   }),
+              DropdownButton(
+                onChanged: (value) {
+                  debugPrint("value ----> $value");
+                  dropDownValue = value;
+                  setState(() {});
+                },
+                value: dropDownValue,
+                items: colorTextList.map((data) => dropdownMenuItem(
+                      onaTap: () {},
+                      value: int.parse(data["index"].toString()),
+                      child: Text(data["text"]),
+                    )),
+                // .toList(),
+              ),
             ],
           ),
         ),
       ),
     );
   }
+
+  dropdownMenuItem({required Null Function() onaTap, required int value, required Text child}) {}
 }
