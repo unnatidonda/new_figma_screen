@@ -11,8 +11,8 @@ class Buttons extends StatefulWidget {
 class _ButtonsState extends State<Buttons> {
   bool switchvalue = true;
   bool checkbox = true;
-  int? radiobutton = 1;
-  int? dropDownValue = 2;
+  int? radiobutton = 0;
+  // int? dropDownValue = 2;
   // List<String> items = [
   //   'Item 1',
   //   'Item 2',
@@ -139,7 +139,7 @@ class _ButtonsState extends State<Buttons> {
                   value: 2,
                   groupValue: radiobutton,
                   onChanged: (value) {
-                    dropDownValue = value!;
+                    radiobutton = value!;
                     debugPrint("value ----> $value");
                     setState(() {});
                   }),
