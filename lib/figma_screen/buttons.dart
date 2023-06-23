@@ -12,13 +12,13 @@ class _ButtonsState extends State<Buttons> {
   bool switchvalue = true;
   bool checkbox = true;
   int? radiobutton = 0;
-  // int? dropDownValue = 2;
-  // List<String> items = [
-  //   'Item 1',
-  //   'Item 2',
-  //   'Item 3',
-  //   'Item 4',
-  // ];
+  int? dropDownValue = 2;
+  List<String> items = [
+    'Item 1',
+    'Item 2',
+    'Item 3',
+    'Item 4',
+  ];
   String? selectedItem = 'Item 1';
 
   get colorTextList => null;
@@ -143,20 +143,20 @@ class _ButtonsState extends State<Buttons> {
                     debugPrint("value ----> $value");
                     setState(() {});
                   }),
-              // DropdownButton(
-              //   onChanged: (value) {
-              //     debugPrint("value ----> $value");
-              //     dropDownValue = value;
-              //     setState(() {});
-              //   },
-              //   value: dropDownValue,
-              //   items: colorTextList.map((data) => dropdownMenuItem(
-              //         onaTap: () {},
-              //         value: int.parse(data["index"].toString()),
-              //         child: Text(data["text"]),
-              //       )),
-              //   // .toList(),
-              // ),
+              DropdownButton(
+                onChanged: (value) {
+                  debugPrint("value ----> $value");
+                  dropDownValue = value;
+                  setState(() {});
+                },
+                value: dropDownValue,
+                items: colorTextList.map((data) => dropdownMenuItem(
+                      onaTap: () {},
+                      value: int.parse(data["index"].toString()),
+                      child: Text(data["text"]),
+                    )),
+                // .toList(),
+              ),
             ],
           ),
         ),
@@ -164,5 +164,5 @@ class _ButtonsState extends State<Buttons> {
     );
   }
 
-  // dropdownMenuItem({required Null Function() onaTap, required int value, required Text child}) {}
+  dropdownMenuItem({required Null Function() onaTap, required int value, required Text child}) {}
 }
