@@ -143,20 +143,20 @@ class _ButtonsState extends State<Buttons> {
                     debugPrint("value ----> $value");
                     setState(() {});
                   }),
-              DropdownButton(
-                onChanged: (value) {
-                  debugPrint("value ----> $value");
-                  dropDownValue = value;
-                  setState(() {});
-                },
-                value: dropDownValue,
-                items: colorTextList.map((data) => dropdownMenuItem(
-                      onaTap: () {},
-                      value: int.parse(data["index"].toString()),
-                      child: Text(data["text"]),
-                    )),
-                // .toList(),
-              ),
+              // DropdownButton(
+              //   onChanged: (value) {
+              //     debugPrint("value ----> $value");
+              //     dropDownValue = value;
+              //     setState(() {});
+              //   },
+              //   value: dropDownValue,
+              //   items: colorTextList.map((data) => dropdownMenuItem(
+              //         onaTap: () {},
+              //         value: int.parse(data["index"].toString()),
+              //         child: Text(data["text"]),
+              //       )),
+              //   // .toList(),
+              // ),
             ],
           ),
         ),
@@ -164,5 +164,5 @@ class _ButtonsState extends State<Buttons> {
     );
   }
 
-  dropdownMenuItem({required Null Function() onaTap, required int value, required Text child}) {}
+  // dropdownMenuItem({required Null Function() onaTap, required int value, required Text child}) {}
 }
